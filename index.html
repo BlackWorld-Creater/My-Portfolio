@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aman Sharma - Software Developer Portfolio | .NET, React.js, Next.js Expert" />
+
+    <title>Aman Sharma | Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+
+  <body>
+    <!-- PRELOADER -->
+    <div class="preloader">
+      <div class="loader">
+        <span>A</span>
+        <span>S</span>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="brand-text">Aman</span>
+          <span class="brand-accent">Sharma</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span class="toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      <div class="hero-gradient-orb orb-1"></div>
+      <div class="hero-gradient-orb orb-2"></div>
+      <div class="hero-gradient-orb orb-3"></div>
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <span class="hero-tag gsap-reveal">Software Developer</span>
+              <h1 class="hero-title gsap-reveal stagger-1">
+                Building <span class="highlight">Scalable</span><br />
+                & <span class="highlight">Innovative</span> Solutions
+              </h1>
+              <p class="hero-description gsap-reveal stagger-2">
+                Passionate Software Developer with 4+ years of experience
+                building enterprise-grade web applications, ERP systems, and
+                high-performance dashboards.
+              </p>
+              <p class="hero-subtitle gsap-reveal stagger-3">
+                Expert in .NET, React.js, Next.js & API Development
+              </p>
+              <div class="hero-buttons gsap-reveal stagger-4">
+                <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+              </div>
+              <div class="hero-stats gsap-reveal stagger-5">
+                <div class="stat-item">
+                  <span class="stat-number" data-count="4">0</span>
+                  <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-count="10">0</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-count="5">0</span>
+                  <span class="stat-label">Clients</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-wrapper gsap-reveal">
+              <div class="hero-image-container">
+                <img
+                  src="images/1.jpeg"
+                  alt="Aman Sharma"
+                  class="hero-img"
+                  onerror="this.src='https://ui-avatars.com/api/?name=Aman+Sharma&background=00d4ff&color=fff&size=400'"
+                />
+                <div class="hero-shape"></div>
+                <div class="hero-experience-badge">
+                  <span class="badge-number">4+</span>
+                  <span class="badge-text">Years Experience</span>
+                </div>
+              </div>
+              <div class="hero-socials">
+                <a href="https://linkedin.com/in/amansharma" target="_blank" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/amansharma" target="_blank" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://twitter.com/amansharma" target="_blank" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#about" aria-label="Scroll to About">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-image-wrapper gsap-reveal">
+              <img
+                src="images/3.jpeg"
+                alt="About Aman Sharma"
+                class="about-img"
+                onerror="this.src='https://ui-avatars.com/api/?name=Aman+Sharma&background=00d4ff&color=fff&size=400'"
+              />
+              <div class="about-experience-card">
+                <span class="exp-year">4+</span>
+                <span class="exp-text">Years of Experience</span>
+              </div>
+              <div class="about-secondary-card">
+                <i class="fas fa-code"></i>
+                <span>Full Stack Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content gsap-reveal">
+              <span class="section-tag">About Me</span>
+              <h2 class="section-title">
+                Passionate <span class="highlight">Developer</span>
+              </h2>
+              <p class="about-text">
+                I am a passionate Software Developer with over 4 years of
+                experience building scalable, secure, and user-friendly
+                applications. My expertise spans across
+                <strong>.NET technologies</strong>, <strong>React.js</strong>,
+                and <strong>Next.js</strong>, with a strong focus on ERP
+                systems, dashboard development, and backend API engineering.
+              </p>
+              <p class="about-text">
+                Currently working at
+                <strong>Grand Sapphire Infratech Pvt. Ltd.</strong>, I have
+                successfully delivered multiple enterprise projects and am
+                committed to writing clean, maintainable code while optimizing
+                application performance.
+              </p>
+              <div class="about-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Enterprise Web Development</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>ERP System Development</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Backend API Engineering</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Performance Optimization</span>
+                </div>
+              </div>
+              <a href="#projects" class="btn btn-primary">Explore My Work <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section dark-section">
+      <div class="container">
+        <div class="section-header text-center gsap-reveal">
+          <span class="section-tag">Technical Skills</span>
+          <h2 class="section-title">
+            My <span class="highlight">Expertise</span>
+          </h2>
+          <p class="section-subtitle">
+            Technologies I work with to build robust solutions
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Backend Skills -->
+          <div class="col-lg-6 mb-5">
+            <div class="skills-category gsap-reveal">
+              <h3 class="skills-title">
+                <i class="fas fa-server"></i> Backend
+              </h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">ASP.NET MVC</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="95%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">VB.NET</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">.NET APIs</span>
+                    <span class="skill-percent">92%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="92%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">MS SQL</span>
+                    <span class="skill-percent">88%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Skills -->
+          <div class="col-lg-6 mb-5">
+            <div class="skills-category gsap-reveal stagger-2">
+              <h3 class="skills-title">
+                <i class="fas fa-laptop-code"></i> Frontend
+              </h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">React.js</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Next.js</span>
+                    <span class="skill-percent">88%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="88%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">HTML/CSS</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="95%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">MUI</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Skills Tags -->
+        <div class="other-skills gsap-reveal">
+          <h3 class="skills-title text-center mb-4">
+            <i class="fas fa-tools"></i> Other Skills
+          </h3>
+          <div class="skills-tags">
+            <span class="skill-tag">ERP Systems</span>
+            <span class="skill-tag">API Integration</span>
+            <span class="skill-tag">Dashboard Development</span>
+            <span class="skill-tag">Mobile-Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header text-center gsap-reveal">
+          <span class="section-tag">Work History</span>
+          <h2 class="section-title">
+            Work <span class="highlight">Experience</span>
+          </h2>
+          <p class="section-subtitle">
+            My professional journey in the tech industry
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Current Position -->
+          <div class="timeline-item gsap-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Feb 2026 - Present</div>
+            <div class="timeline-content">
+              <h3>Software Developer</h3>
+              <p class="company-name">Grand Sapphire Infratech Pvt. Ltd.</p>
+              <ul class="timeline-list">
+                <li>
+                  Developing enterprise-grade web applications using .NET,
+                  React.js, and Next.js
+                </li>
+                <li>
+                  Engineered backend APIs for seamless ERP data communication
+                </li>
+                <li>Building responsive UI for web and mobile platforms</li>
+                <li>Ensuring real-time data synchronization</li>
+                <li>Optimizing application performance</li>
+                <li>Collaborating with cross-functional teams</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>ASP.NET MVC</span>
+                <span>.NET APIs</span>
+                <span>React.js</span>
+                <span>Next.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manaviyatech Position -->
+          <div class="timeline-item gsap-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jul 2025 - Nov 2025</div>
+            <div class="timeline-content">
+              <h3>Senior Software Developer</h3>
+              <p class="company-name">Manaviyatech Solutions LLP</p>
+              <ul class="timeline-list">
+                <li>
+                  Mentored junior developers, providing guidance on best
+                  practices and coding techniques for improved productivity
+                </li>
+                <li>
+                  Delivered high-quality code on time by effectively managing
+                  project timelines and prioritizing tasks accordingly
+                </li>
+                <li>
+                  Trained new developers and programmers on company standards
+                  for design and review
+                </li>
+                <li>
+                  Improved software performance by identifying and resolving
+                  bottlenecks in the code
+                </li>
+              </ul>
+              <div class="timeline-tech">
+                <span>Leadership</span>
+                <span>Mentoring</span>
+                <span>Code Review</span>
+                <span>Agile</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Previous Position -->
+          <div class="timeline-item gsap-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Mar 2021 - Jun 2025</div>
+            <div class="timeline-content">
+              <h3>Software Developer</h3>
+              <p class="company-name">Dataman Computer System Pvt. Ltd.</p>
+              <ul class="timeline-list">
+                <li>
+                  Developed and maintained enterprise-grade web applications
+                  using .NET, React.js, and Next.js
+                </li>
+                <li>
+                  Engineered backend APIs for seamless ERP data communication
+                </li>
+                <li>Built responsive UI for web and mobile platforms</li>
+                <li>Ensured real-time data synchronization</li>
+                <li>Optimized application performance</li>
+                <li>Collaborated with cross-functional teams</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>ASP.NET MVC</span>
+                <span>.NET APIs</span>
+                <span>React.js</span>
+                <span>Next.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section dark-section">
+      <div class="container">
+        <div class="section-header text-center gsap-reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">
+            My <span class="highlight">Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            Showcase of successful projects I've worked on
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-lg-6 mb-4">
+            <div class="project-card-large gsap-reveal">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+                  alt="Business Static Application"
+                />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">ERP Web & Mobile</span>
+                    <h3>Business Static Application</h3>
+                    <p>
+                      Designed a web and mobile platform for real-time ERP
+                      monitoring including Sales, Purchases, and Inventory.
+                    </p>
+                    <div class="project-features">
+                      <span><i class="fas fa-check"></i> Backend APIs</span>
+                      <span><i class="fas fa-check"></i> User-friendly Frontend</span>
+                      <span><i class="fas fa-check"></i> ERP Integration</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-6 mb-4">
+            <div class="project-card-large gsap-reveal stagger-2">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+                  alt="PaperBiz ERP"
+                />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Windows ERP</span>
+                    <h3>PaperBiz ERP</h3>
+                    <p>
+                      Enhanced Windows-based ERP for the paper industry with
+                      improved dashboards, reporting modules, and document
+                      management.
+                    </p>
+                    <div class="project-features">
+                      <span><i class="fas fa-check"></i> Dashboards</span>
+                      <span><i class="fas fa-check"></i> Reporting Modules</span>
+                      <span><i class="fas fa-check"></i> Document Management</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-6 mb-4">
+            <div class="project-card-large gsap-reveal">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800"
+                  alt="Channel Manager"
+                />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Web Application</span>
+                    <h3>Channel Manager</h3>
+                    <p>
+                      Multi-property management platform with real-time room
+                      availability, dashboards, property & rate plan modules.
+                    </p>
+                    <div class="project-features">
+                      <span><i class="fas fa-check"></i> Real-time Updates</span>
+                      <span><i class="fas fa-check"></i> Property Management</span>
+                      <span><i class="fas fa-check"></i> Mobile Optimized</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-6 mb-4">
+            <div class="project-card-large gsap-reveal stagger-2">
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800"
+                  alt="DLMS - Loan Management System"
+                />
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <span class="project-type">Web Application</span>
+                    <h3>DLMS (Dataman Loan Management System)</h3>
+                    <p>
+                      Education loan management system for application tracking
+                      with responsive frontend, loan workflows & approval
+                      systems.
+                    </p>
+                    <div class="project-features">
+                      <span><i class="fas fa-check"></i> Loan Workflows</span>
+                      <span><i class="fas fa-check"></i> Approval System</span>
+                      <span><i class="fas fa-check"></i> Backend APIs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header text-center gsap-reveal">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">
+            My <span class="highlight">Education</span>
+          </h2>
+          <p class="section-subtitle">
+            Academic qualifications that built my foundation
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="education-card gsap-reveal">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <span class="education-year">2021</span>
+                <h3>Master of Computer Application (MCA)</h3>
+                <p class="education-institute">
+                  Kanpur Institute of Technology
+                </p>
+                <p class="education-desc">
+                  Specialized in software development and computer applications
+                  with focus on modern web technologies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="education-card gsap-reveal stagger-2">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <span class="education-year">2018</span>
+                <h3>Bachelor of Computer Application (BCA)</h3>
+                <p class="education-institute">Vision College of Management</p>
+                <p class="education-desc">
+                  Built foundational knowledge in programming, database
+                  management, and software engineering principles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section dark-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="contact-info gsap-reveal">
+              <span class="section-tag">Get In Touch</span>
+              <h2 class="section-title">
+                Let's <span class="highlight">Connect</span>
+              </h2>
+              <p class="contact-desc">
+                Feel free to reach out for collaborations, project inquiries, or
+                just to say hello!
+              </p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Phone</h4>
+                    <p>+91 8081509186</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Email</h4>
+                    <p>aman5kvision@gmail.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Date of Birth</h4>
+                    <p>21/11/1999</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-socials">
+                <a href="https://linkedin.com/in/amansharma" target="_blank" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/amansharma" target="_blank" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://twitter.com/amansharma" target="_blank" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form gsap-reveal">
+              <h3>Send a Message</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Your Name" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" placeholder="Your Email" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select required>
+                      <option value="" disabled selected>Select Subject</option>
+                      <option value="project">Project Inquiry</option>
+                      <option value="job">Job Opportunity</option>
+                      <option value="collaboration">Collaboration</option>
+                      <option value="general">General Inquiry</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea
+                      placeholder="Your Message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <h3>Aman <span>Sharma</span></h3>
+              <p>
+                Software Developer<br />
+                Building scalable solutions
+              </p>
+              <div class="footer-socials">
+                <a href="https://linkedin.com/in/amansharma" target="_blank" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/amansharma" target="_blank" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://twitter.com/amansharma" target="_blank" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-links">
+              <h4>Skills</h4>
+              <ul>
+                <li><a href="#skills">.NET Development</a></li>
+                <li><a href="#skills">React.js</a></li>
+                <li><a href="#skills">Next.js</a></li>
+                <li><a href="#skills">ERP Systems</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="footer-newsletter">
+              <h4>Contact Info</h4>
+              <p>
+                <i class="fas fa-phone"></i> +91 8081509186<br />
+                <i class="fas fa-envelope"></i> aman5kvision@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Aman Sharma. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
