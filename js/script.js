@@ -375,6 +375,9 @@ function initCounterAnimation() {
         trigger: counter,
         start: 'top 85%',
         once: true
+      },
+      onComplete: function() {
+        counter.textContent = target + '+';
       }
     });
   });
